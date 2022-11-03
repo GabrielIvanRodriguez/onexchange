@@ -12,6 +12,6 @@
 }
 @mixin grid($col,$row){
     display: grid;
-    grid-template-columns: $col;
-    grid-template-rows: $row;
+    grid-template-columns: repeat($col,1fr);
+    grid-template-rows: repeat($row,1fr);
 }

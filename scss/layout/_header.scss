@@ -1,0 +1,44 @@
+header{
+    font-family: 'Roboto', sans-serif;
+    @include grid(6,2);
+    grid-template-areas: 
+    "logo logo logo logo logo logo"
+    "nav nav nav nav nav nav"
+    ;
+    height:min-content;
+    background-color: rgba(0, 255, 255, 0.829);
+    justify-items: center;
+    align-items: center;
+    a{
+        text-decoration: none;
+    }
+    nav{
+        grid-area: nav;
+        width:100%;     
+
+    }
+}
+.logo{
+    grid-area: logo;
+    
+    a{
+        font-family: 'Fredericka the Great', cursive;
+        color:rgba(0, 26, 255, 0.719);
+        font-size: 40px;
+    }
+}
+.navBar{
+
+    grid-area:navB;
+    width:100%;
+    padding: 0;
+    margin: 0;
+    @include flex(row,space-evenly,center);
+    li{
+        list-style: none;
+    }
+    a{
+        color:rgba(0, 26, 255, 0.5);
+        font-size: 16px;
+    }
+}

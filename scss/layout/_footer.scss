@@ -1,0 +1,40 @@
+footer{
+    color: white;
+    font-size: 14px;
+    background-color:  #00a2ffb0;  
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    widht:100%;
+    height:min-content;
+    @include grid(4,1);
+    grid-template-areas:
+    "company support contactus socialmedia"
+    ;
+    justify-content: space-evenly;
+    img{
+        margin:5px;
+    }
+    a{
+        text-decoration: none;
+        color: #0051ff88;
+    }
+    ul{
+        list-style: none;   
+        color: #0051ff88;
+    }
+}
+.company{
+    grid-area: company;
+    }
+.support{
+    grid-area: support;
+    }
+.contactus{
+    grid-area: contactus;
+    }
+.socialmedia{
+    grid-area: socialmedia;
+    }
+.socialmedia ul{
+    display: flex;
+    }

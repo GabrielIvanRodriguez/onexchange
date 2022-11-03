@@ -6,3 +6,149 @@
 
 /** font-family: 'Fredericka the Great', cursive;
 font-family: 'Roboto', sans-serif; */
+header {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "logo logo logo logo logo logo" "nav nav nav nav nav nav";
+  height: min-content;
+  background-color: rgba(0, 255, 255, 0.829);
+  justify-items: center;
+  align-items: center; }
+  header a {
+    text-decoration: none; }
+  header nav {
+    grid-area: nav;
+    width: 100%; }
+
+.logo {
+  grid-area: logo; }
+  .logo a {
+    font-family: 'Fredericka the Great', cursive;
+    color: rgba(0, 26, 255, 0.719);
+    font-size: 40px; }
+
+.navBar {
+  grid-area: navB;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .navBar li {
+    list-style: none; }
+  .navBar a {
+    color: rgba(0, 26, 255, 0.5);
+    font-size: 16px; }
+
+main {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0077ffc4; }
+  main h2 {
+    font-family: 'Fredericka the Great', cursive;
+    color: #0075FF; }
+  main h3 {
+    color: #0075FF; }
+  main h4 {
+    color: white;
+    text-align: center;
+    margin: 10px; }
+
+.banner {
+  background-image: url(../assets/img/mainbanner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: viewport;
+  height: 500px;
+  padding: 20px; }
+  .banner h2 {
+    margin-bottom: 5px; }
+  .banner p {
+    color: #0075FF; }
+  .banner button {
+    background: rgba(0, 162, 255, 0.418);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 5px;
+    color: #0075FF; }
+
+.find {
+  padding: 20px; }
+  .find a {
+    text-decoration: none;
+    color: white;
+    margin: 10px; }
+  .find img {
+    margin: 30px; }
+
+.exploreExc {
+  background-image: url(../assets/img/meetaexc.png);
+  width: 100%;
+  height: 250px;
+  color: white;
+  padding: 20px; }
+  .exploreExc button {
+    margin: 10px; }
+
+.exploreCit {
+  background-image: url(../assets/img/meetsome.png);
+  width: 100%;
+  height: 250px;
+  color: white;
+  padding: 20px; }
+  .exploreCit button {
+    margin: 10px; }
+
+.exploreEve {
+  background-image: url(../assets/img/events.png);
+  width: 100%;
+  height: 250px;
+  color: white;
+  padding: 20px; }
+  .exploreEve button {
+    margin: 10px; }
+
+footer {
+  color: white;
+  font-size: 14px;
+  background-color: #00a2ffb0;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+  widht: 100%;
+  height: min-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "company support contactus socialmedia";
+  justify-content: space-evenly; }
+  footer img {
+    margin: 5px; }
+  footer a {
+    text-decoration: none;
+    color: #0051ff88; }
+  footer ul {
+    list-style: none;
+    color: #0051ff88; }
+
+.company {
+  grid-area: company; }
+
+.support {
+  grid-area: support; }
+
+.contactus {
+  grid-area: contactus; }
+
+.socialmedia {
+  grid-area: socialmedia; }
+
+.socialmedia ul {
+  display: flex; }
